@@ -1,0 +1,36 @@
+GET http://localhost:5190/games
+
+
+### GET by Id
+GET http://localhost:5190/games/1
+
+### POST to Create new Game
+POST http://localhost:5190/games
+Content-Type: application/json
+
+{
+    "name": "Street Fighter II",
+    "genreId": 1,
+    "price": 59.99,
+    "releaseDate": "1992-10-20"
+}
+
+
+###
+PUT http://localhost:5190/games/2
+Content-Type: application/json
+
+{
+    "name": "Street Fighter II Turbo",
+    "genreId": 5,
+    "price": 69.99,
+    "releaseDate": "1992-10-20"
+  }
+
+###
+DELETE http://localhost:5190/games/2
+
+
+###
+
+GET  http://localhost:5190/genres
